@@ -13,20 +13,20 @@ export default function Navbar() {
 	return (
 		<>
 			<div className={styles.navbar}>
-				<span className={styles.navbar_logo}>
+				<Link className={styles.navbar_logo} href="/">
 					<Image className={styles.image} src="/Logo.svg" alt="logo" width={45} height={45} />
 					<h1 className={styles.name}>seal point.</h1>
-				</span>
+				</Link>
 				<ul className={styles.navbar_links}>
 					<Link className={styles.link} href="/">
 						home
 					</Link>
-					{/* <Link className={styles.link} href="/about">
-					about
-				</Link>
-				<Link className={styles.link} href="/contact">
-					contact
-				</Link> */}
+					<Link className={styles.link} href="/about">
+						about
+					</Link>
+					<Link className={styles.link} href="/contact">
+						contact
+					</Link>
 				</ul>
 				<div className={styles.hamburger_menu}>
 					{!menuOpen && (
@@ -40,15 +40,15 @@ export default function Navbar() {
 								<Close onClick={() => setMenuOpen(false)} />
 							</button>
 							<ul className={styles.hamburger_menu_list}>
-								<Link className={styles.hamburger_link} href="/">
+								<Link className={styles.hamburger_link} onClick={() => setMenuOpen(false)} href="/">
 									home
 								</Link>
-								{/* <Link className={styles.hamburger_link} href="/about">
+								<Link className={styles.hamburger_link} onClick={() => setMenuOpen(false)} href="/about">
 									about
 								</Link>
-								<Link className={styles.hamburger_link} href="/contact">
+								<Link className={styles.hamburger_link} onClick={() => setMenuOpen(false)} href="/contact">
 									contact
-								</Link> */}
+								</Link>
 							</ul>
 						</div>
 					)}
