@@ -11,11 +11,11 @@ export const metadata = {
 
 const futura = localFont({
 	src: [
-		{ path: '../public/font/Futura Heavy font.ttf', weight: '800', style: 'normal', format: 'truetype' },
-		{ path: '../public/font/Futura Bold font.ttf', weight: '600', style: 'normal', format: 'truetype' },
-		{ path: '../public/font/Futura Book font.ttf', weight: '300', style: 'normal', format: 'truetype' },
+		{ path: '../public/font/Futura Heavy font.ttf', weight: '800' },
+		{ path: '../public/font/Futura Bold font.ttf', weight: '700' },
+		{ path: '../public/font/Futura Book font.ttf', weight: '300' },
 	],
-
+	weight: '300 700 800',
 	display: 'swap',
 	variable: 'Futura',
 });
@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en" className={futura.className}>
 			<body>
-				<Navbar />
+				{/* <Navbar /> */}
 				{children}
 				<Footer />
 				<GoogleAnalytics gaId="G-BXC34PZMJT " />

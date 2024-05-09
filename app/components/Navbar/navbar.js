@@ -17,7 +17,7 @@ export default function Navbar() {
 					<Image className={styles.image} src="/Logo.svg" alt="logo" width={45} height={45} />
 					<h1 className={styles.name}>seal point.</h1>
 				</Link>
-				{/* <ul className={styles.navbar_links}>
+				<ul className={styles.navbar_links}>
 					<Link className={styles.link} href="/">
 						home
 					</Link>
@@ -52,7 +52,7 @@ export default function Navbar() {
 							</ul>
 						</div>
 					)}
-				</div> */}
+				</div>
 			</div>
 		</>
 	);

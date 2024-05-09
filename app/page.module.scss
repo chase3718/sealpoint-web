@@ -4,11 +4,12 @@
   align-items: center;
 
   .logo {
-    height: calc(100vh - 257px);
+    height: calc(100vh - 600px);
     margin: 60px;
   }
 
   .spotify {
+    margin-top: 25px;
     width: 50%;
     height: 352px;
   }
@@ -17,5 +18,6 @@
 @media screen and (max-width: calc(100vh - 270px)) {
   .logo {
     width: 90%;
+    height: auto !important
   }
 }

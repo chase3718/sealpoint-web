@@ -5,6 +5,7 @@
     .wrapperText {
         width: 50%;
 
+
         .text {
             padding: 25px;
             text-align: right;
@@ -38,6 +39,12 @@
             z-index: 10;
 
             .text {
+                .header {
+                    font-weight: 800;
+                }
+
+                background-color: rgba(0, 0, 0, 0.3);
+
                 width: 853px;
                 min-width: 853px;
                 margin-right: 25px;

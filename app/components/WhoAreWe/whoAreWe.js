@@ -7,7 +7,7 @@ export default function WhoAreWe() {
 		<div className={styles.description}>
 			<div className={styles.wrapperText}>
 				<div className={styles.text}>
-					<h1>who are we?</h1>
+					<h1 className={styles.header}>who are we?</h1>
 					<p>
 						Seal Point is a &quot;Post-Core&quot; band hailing from North Brunswick, New Jersey. Formed in 2022, Seal
 						Point has been making waves in the local New Jersey music scene with their unique blend of emotional lyrics,

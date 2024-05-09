@@ -19,7 +19,7 @@
         background-color: #BA0000;
 
         font-size: 23px;
-        font-weight: 600;
+        font-weight: 800;
         color: white;
         text-decoration: none;
         transition: 0.3s;
@@ -29,11 +29,19 @@
         }
 
         transition: background-color 0.3s ease;
+
+        .social_image {
+            display: none;
+        }
     }
 }
 
 @media (max-width: 650px) {
     .social_name {
         display: none;
+    }
+
+    .social_image {
+        display: flex !important;
     }
 }
