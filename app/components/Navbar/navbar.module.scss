@@ -1,4 +1,7 @@
 .navbar {
+    // position: sticky;
+    top: 0;
+    background-color: var(--global-bg-color);
     border-bottom: 4px solid white;
     display: flex;
     vertical-align: middle;
