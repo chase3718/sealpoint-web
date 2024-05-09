@@ -4,8 +4,13 @@
   align-items: center;
 
   .logo {
-    height: calc(100vh - 261px);
+    height: calc(100vh - 257px);
     margin: 60px;
+  }
+
+  .spotify {
+    width: 50%;
+    height: 352px;
   }
 }
 

@@ -2,6 +2,7 @@ import styles from './page.module.scss';
 import Socials from './components/Socials/socials';
 import WhoAreWe from './components/WhoAreWe/whoAreWe';
 import Image from 'next/image';
+import Spotify from './components/Spotify/spotify';
 
 export default function Home() {
 	return (
@@ -11,6 +12,7 @@ export default function Home() {
 			</div>
 			<Socials />
 			<WhoAreWe />
+			<Spotify />
 		</div>
 	);
 }
