@@ -8,3 +8,9 @@
     margin: 60px;
   }
 }
+
+@media screen and (max-width: calc(100vh - 270px)) {
+  .logo {
+    width: 100%;
+  }
+}
