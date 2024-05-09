@@ -13,7 +13,7 @@
 
         p {
             font-size: 27px;
-
+            font-weight: 300;
         }
     }
 
@@ -43,7 +43,7 @@
 
 @media screen and (max-width: 900px) {
     .description {
-        height: 850px;
+        // height: 850px;
         padding: 0;
         margin: 0;
 
