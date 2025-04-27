@@ -6,7 +6,7 @@ import './globals.css';
 import styles from './layout.module.scss';
 
 import Footer from './components/Footer/footer';
-import Sidebar from './components/Sidebar/sidebar';
+import Navbar from './components/Navbar/navbar';
 
 export const metadata = {
 	title: 'Seal Point',
@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
 		<html lang="en" className={`${futura.variable} ${rubik_dis.variable}`}>
 			<body>
 				<section className={styles.main}>
-					<Sidebar></Sidebar>
+					<Navbar></Navbar>
 					<section className={styles.content}>{children}</section>
 				</section>
 				<Footer></Footer>

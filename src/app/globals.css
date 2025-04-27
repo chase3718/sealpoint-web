@@ -9,7 +9,7 @@
   --sealpoint-red-light: #BD5266;
 
   font-family: var(--font-futura);
-  font-size: 32px;
+  font-size: 16px;
   -webkit-text-stroke: 0.005rem var(--sealpoint-red-secondary);
 }
 
