@@ -1,0 +1,40 @@
+.sidebar {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+
+    .logo {
+        width: 600px;
+        height: 300px;
+    }
+
+    .hrefs {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+
+        .header_href {
+            display: inline-block;
+            width: 100%;
+            color: var(--sealpoint-red);
+            text-decoration: none;
+            font-size: 4rem;
+            background-color: var(--secondary-bg-color);
+            padding: 5px;
+            height: fit-content;
+
+
+            &:hover {
+                // background-image: linear-gradient(to right, white, var(--primary-bg-color));
+
+                h1 {
+                    // float: right;
+                    text-shadow: 2px 2px;
+                    -webkit-text-stroke: 0.1px white;
+
+                }
+            }
+        }
+    }
+}

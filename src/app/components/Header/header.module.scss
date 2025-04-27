@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    // width: 100%;
+
+    .logo {
+        width: 600px;
+        height: 300px;
+        z-index: -1;
+    }
+
+
+    .header_href {
+        display: inline-block;
+        color: var(--sealpoint-red);
+        text-decoration: none;
+        font-size: xx-large;
+        background-color: white;
+        padding: 5px;
+        height: fit-content;
+
+
+        &:hover {
+            -webkit-text-stroke: 1px white;
+            background-color: transparent;
+        }
+    }
+}
