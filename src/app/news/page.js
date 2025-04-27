@@ -2,29 +2,57 @@ export default function News() {
 	return (
 		<div>
 			<h1>Seal Point News</h1>
-			<article>
-				<h2>Seal Point Announces New Album: "Ball Sucker"</h2>
+
+			<section>
+				<h2>Breaking News: Seal Point Releases New Album</h2>
 				<p>
-					The hardcore band Seal Point has officially announced their upcoming album, <em>"Ball Sucker"</em>, set to
-					release this summer. Fans can expect a mix of crushing riffs, emotional lyrics, and the raw energy that Seal
-					Point is known for.
+					Seal Point has just announced the release of their highly anticipated new album, *Oceanic Echoes*. Fans are
+					already raving about the teaser tracks released earlier this month.
 				</p>
-			</article>
-			<article>
-				<h2>World Tour Kicks Off Next Month</h2>
+			</section>
+
+			<section>
+				<h2>Upcoming Tour Dates</h2>
+				<p>Seal Point is hitting the road! Check out the upcoming tour dates:</p>
+				<ul>
+					<li>May 15, 2025 - Los Angeles, CA</li>
+					<li>May 20, 2025 - New York, NY</li>
+					<li>May 25, 2025 - Chicago, IL</li>
+					<li>June 1, 2025 - Austin, TX</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Exclusive Interview with Seal Point</h2>
 				<p>
-					Seal Point is hitting the road! The band has revealed dates for their highly anticipated world tour, starting
-					in Los Angeles and spanning across Europe, Asia, and Australia. Tickets are on presale now—don’t miss your
-					chance to see them live!
+					In an exclusive interview, the band shared insights into their creative process and what inspired their latest
+					album. "We wanted to capture the essence of the ocean," said the lead vocalist.
 				</p>
-			</article>
-			<article>
-				<h2>Exclusive Merch Drop</h2>
+			</section>
+
+			<section>
+				<h2>Fan Spotlight</h2>
 				<p>
-					Seal Point has launched a new line of exclusive merchandise, including limited-edition vinyl, apparel, and
-					signed posters. Head over to their official store to grab yours before they sell out!
+					This week, we’re highlighting one of our biggest fans, Alex from Seattle, WA. Alex has attended over 20 Seal
+					Point concerts and even has a tattoo of the band’s logo!
 				</p>
-			</article>
+			</section>
+
+			<section>
+				<h2>Merchandise Update</h2>
+				<p>
+					New merchandise is now available in the Seal Point store! Check out the latest t-shirts, hoodies, and posters
+					featuring artwork from *Oceanic Echoes*.
+				</p>
+			</section>
+
+			<section>
+				<h2>Seal Point Charity Event</h2>
+				<p>
+					Seal Point is hosting a charity event to support ocean conservation efforts. Join us on June 10, 2025, for a
+					live performance and auction of exclusive memorabilia.
+				</p>
+			</section>
 		</div>
 	);
 }

@@ -3,7 +3,7 @@ import styles from './footer.module.scss';
 export default function Footer() {
 	return (
 		<footer className={styles.footer}>
-			<p>© 2024 seal point.</p>
+			<p>© {new Date().getFullYear()} seal point.</p>
 		</footer>
 	);
 }

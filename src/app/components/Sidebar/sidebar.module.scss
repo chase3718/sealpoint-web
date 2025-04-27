@@ -1,7 +1,9 @@
 .sidebar {
     width: 600px;
+    height: calc(100vh - 1rem);
     display: flex;
     flex-direction: column;
+    gap: 0.5em;
 
     .logo {
         width: 600px;
@@ -12,29 +14,91 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        gap: 5px;
+        gap: 0.5em;
 
         .header_href {
             display: inline-block;
             width: 100%;
-            color: var(--sealpoint-red);
+            color: var(--main-font);
             text-decoration: none;
-            font-size: 4rem;
             background-color: var(--secondary-bg-color);
             padding: 5px;
             height: fit-content;
+            overflow: hidden;
+            white-space: nowrap;
 
+            .shimmer {
+                background-image: repeating-linear-gradient(to left,
+                        var(--sealpoint-red),
+                        var(--sealpoint-red),
+                        var(--sealpoint-red-light),
+                        var(--sealpoint-red),
+                        var(--sealpoint-red));
+                background-size: 300% 100%;
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+                animation: shimmer 10s linear infinite;
+            }
 
             &:hover {
-                // background-image: linear-gradient(to right, white, var(--primary-bg-color));
+                -webkit-text-stroke: 0.01rem var(--sealpoint-red-secondary);
 
-                h1 {
-                    // float: right;
-                    text-shadow: 2px 2px;
-                    -webkit-text-stroke: 0.1px white;
+                h4:after {
+                    content: '';
+                    width: 0.5em;
+                    height: 0.5em;
+                    background-image: url('/Logo.svg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    position: relative;
+                    display: inline-block;
+                    left: 20px;
 
+                    @media (prefers-color-scheme: light) {
+                        background-image: url('/Logo_Black.svg');
+                    }
                 }
             }
         }
+    }
+
+    .filler {
+        width: 600px;
+        height: 100%;
+        background-image: url('/grad.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        // background-position: 50%;
+    }
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(10%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Shimmer animation */
+@keyframes shimmer {
+    0% {
+        background-position: -150% 50%;
+    }
+
+    50% {
+        background-position: 50% 50%;
+    }
+
+    100% {
+        background-position: 150% 50%;
     }
 }
