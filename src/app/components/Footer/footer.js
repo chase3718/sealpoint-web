@@ -6,7 +6,6 @@ export default function Footer() {
 	const [year, setYear] = useState();
 	useEffect(() => {
 		setYear(new Date().getFullYear());
-		console.log('poop');
 	});
 
 	return (

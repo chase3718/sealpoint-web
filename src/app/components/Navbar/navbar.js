@@ -26,6 +26,11 @@ export default function Navbar() {
 						<h4 className={styles.nav}>band</h4>
 					</div>
 				</a>
+				<a className={styles.header_href} href="/band">
+					<div className={styles.bounce}>
+						<h4 className={styles.nav}>flash</h4>
+					</div>
+				</a>
 				<a className={styles.header_href} href="/media">
 					<div className={styles.bounce}>
 						<h4 className={styles.nav}>media</h4>
