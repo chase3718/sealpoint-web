@@ -23,6 +23,9 @@ export default function Socials() {
 				<Youtube className={styles.social_image} width={40} height={40} />
 				<p className={styles.social_name}>youtube</p>
 			</a>
+			<a className={styles.social} href="https://shop.sealpointband.com">
+				<p>tickets</p>
+			</a>
 		</div>
 	);
 }
