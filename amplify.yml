@@ -1,6 +1,9 @@
 version: 1
 backend:
   phases:
+    preBuild:
+      commands:
+        - nvm install 22.14.0
     build:
       commands:
         - npm ci --cache .npm --prefer-offline
