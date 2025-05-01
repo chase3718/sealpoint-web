@@ -7,7 +7,7 @@ export default function Spotify() {
 				className={styles.spotify}
 				src="https://open.spotify.com/embed/artist/1JJ1ZAHrkXbR1IlMWDlsLg?utm_source=generator"
 				frameBorder="0"
-				allowfullscreen=""
+				allowFullscreen=""
 				allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
 				loading="lazy"
 			></iframe>
