@@ -10,7 +10,7 @@ declare module "sst" {
       "type": "sst.aws.Bucket"
     }
     "MyWeb": {
-      "type": "sst.aws.Nextjs"
+      "type": "sst.aws.SvelteKit"
       "url": string
     }
   }

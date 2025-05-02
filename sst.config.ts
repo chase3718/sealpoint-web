@@ -10,11 +10,6 @@ export default $config({
 		};
 	},
 	async run() {
-		const bucket = new sst.aws.Bucket('MyBucket', {
-			access: 'public'
-		});
-		new sst.aws.SvelteKit('MyWeb', {
-			link: [bucket]
-		});
+		new sst.aws.SvelteKit('MyWeb', {});
 	}
 });
